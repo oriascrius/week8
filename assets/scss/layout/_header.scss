@@ -1,0 +1,292 @@
+.logo {
+  width: 200px;
+}
+.group {
+  min-width: 208px;
+}
+.header-wrapper {
+  background-color: #ffffff;
+  // box-shadow: 0px 4px 10px #0068ff1a;
+  box-shadow: 0px 2px 40px 0px #0068ff1a;
+  padding: 16px 40px;
+  border-radius: 100px;
+  @media (max-width: 991px) {
+    padding: 12px 17px 12px 12px;
+    border-radius: 0;
+  }
+}
+
+.input-group {
+  border: 1px solid #ececec;
+  width: 425px;
+  height: 64px;
+  border-radius: 16px;
+  padding: 0 8px 0 8px;
+  .btn {
+    border-radius: 12px;
+  }
+}
+@media (max-width: 1200px) {
+  .input-group {
+    width: 300px;
+  }
+  .header-btn {
+    padding: 16px 10px;
+  }
+  .header-logo {
+    width: 125px;
+  }
+  .header-wrapper{
+    height: 64px;
+  }
+}
+
+@media (max-width: 991px) {
+  .input-group {
+    display: none;
+  }
+  .header-btn {
+    display: none;
+  }
+}
+
+.navbar-sm {
+  display: none;
+  @media (max-width: 991px) {
+    display: flex;
+  }
+}
+.navbar-lg {
+  display: flex;
+  @media (max-width: 991px) {
+    display: none;
+  }
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+// 桌機版 - 下拉選框內部
+.dropdown-menu {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4b4b4b;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px 0px #0000001f;
+}
+.dropdown-menu-contect {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+}
+.dropdown-item:hover {
+  color: #ffffff;
+  background-color: $primary-100;
+  border-radius: 12px;
+}
+// 控制下拉選單的 icon，這邊用 Material+Symbols+Outlined，因為 bootstrap 我找不到向下箭頭
+.dropdown-toggle::after {
+  content: "\e313";
+  font-family: "Material Symbols Outlined";
+  border: 0;
+}
+// header 會員區塊，自訂把箭頭去掉
+.dropdown-toggle-member::after {
+  content: "";
+}
+// header 通知 icon 區塊，自訂把箭頭去掉
+.dropdown-toggle-notify::after {
+  content: "";
+}
+// header 通知區塊折疊
+.dropdown-notify {
+  width: 320px;
+  .dropdown-notify-title {
+    font-size: 14px;
+    font-family: 400;
+  }
+  .dropdown-item-notify p {
+    font-size: 16px;
+  }
+  .dropdown-item-notify span {
+    font-size: 14px;
+  }
+}
+.dropdown-item-notify-link:hover {
+  background-color: #f9f9f9;
+}
+// header 會員區塊折疊
+.dropdown-member {
+  width: 237px;
+}
+/* 桌機版 - 第一層 */
+.first {
+  background-color: #f9f9f9;
+  border: #ececec;
+  width: 232px;
+  height: 600px;
+  overflow-y: auto;
+  border-radius: 12px 0 0 12px;
+  padding-top: 12px;
+}
+/* 桌機版 - 第二層 */
+.second {
+  background-color: #ffffff;
+  border: #ececec;
+  width: 232px;
+  max-height: 600px;
+  overflow-y: auto;
+  display: none; /* 初始隱藏所有的 .second 列表 */
+  border: 1px solid #ececec;
+}
+/* 桌機版 - 第三層 */
+.third {
+  background-color: #ffffff;
+  border: #ececec;
+  width: 399px;
+  max-height: 600px;
+  overflow-y: auto;
+  border-radius: 0 12px 12px 0;
+  display: none; /* 初始隱藏所有的 .second 列表 */
+  h3 {
+    font-size: 16px;
+  }
+}
+.third-special {
+  padding: 4px 8px 4px 8px;
+  border-radius: 100px;
+  font-family: 400;
+  font-size: 14px;
+  top: 4px;
+  left: 4px;
+}
+.third-content {
+  width: 243px;
+}
+.third-content h5 {
+  font-size: 16px;
+}
+.third-content-author img {
+  border-radius: 50px;
+}
+.third-content-deletePrice {
+  font-weight: 400;
+  font-size: 12px;
+  color: #808080;
+  text-decoration: line-through;
+  text-align: right;
+}
+.third-content-people {
+  color: #4b4b4b;
+  font-family: 400;
+  font-size: 14px;
+}
+.third-content-icon {
+  width: 12px;
+  height: 12px;
+  padding-right: 4px;
+  object-fit: cover; /* 確保圖片不會變形 */
+}
+.third-content-score {
+  color: #180000;
+  font-family: 500;
+  font-size: 14px;
+  padding-right: 4px;
+}
+.third-content-number {
+  color: #808080;
+  font-family: 500;
+  font-size: 14px;
+}
+
+/* 自訂滾動條寬度和樣式 */
+.first::-webkit-scrollbar {
+  width: 4px; /* 設定 Y 軸滾動條寬度 */
+}
+.third::-webkit-scrollbar {
+  width: 0; /* 設定 Y 軸滾動條寬度 */
+}
+.first::-webkit-scrollbar-thumb {
+  background-color: #e1e1e1; /* 設定滾動條顏色 */
+  border-radius: 12px; /* 設定滾動條圓角 */
+}
+
+// header 右邊兩個 icon (通知、購物車)
+.header-icon {
+  margin-right: 16px;
+}
+@media (max-width: 991px) {
+  .header-icon {
+    margin-right: 0;
+  }
+}
+@media (max-width: 991px) {
+  .header-member-icon {
+    display: none;
+  }
+  .navbar-toggler {
+    padding: 8px;
+  }
+}
+// 通知 icon 上的點
+.header-icon-dot {
+  content: "";
+  top: -4px;
+  right: -4px;
+  width: 8px;
+  height: 8px;
+}
+// 購物車 icon 上的點
+.header-icon-number {
+  content: "";
+  top: -2px;
+  right: -2px;
+  width: 16px;
+  height: 16px;
+}
+// sm 時控制摺疊漢堡列表不要有光圈
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+// 手機板摺疊選單
+.offcanvas {
+  color: #4b4b4b;
+  font-weight: normal;
+  font-size: 16px;
+}
+// 手機板 第二層
+.mobileSecond {
+  display: none; /* 初始隱藏所有的 .second 列表 */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.mobileSecond-title {
+  border-radius: 12px;
+}
+.header-member {
+  display: none;
+}
+.member-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+.member-class {
+  font-size: 14px;
+  font-weight: 400;
+}
+.member-settings {
+  img {
+    width: 24px;
+    height: 24px;
+  }
+  h4 {
+    color: #4b4b4b;
+    font-size: 16px;
+  }
+}
+.mobileLogout {
+  display: none;
+}

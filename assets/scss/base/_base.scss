@@ -1,0 +1,73 @@
+// 把 Noto Serif TC 放在 scss - utils - _variables.scss - font-family-sans-serif
+// 把 line-height: 1.5 放在 scss - utils - _variables.scss - line-height-base
+// 這裡就不用寫了
+// body{
+//     font-family: "Poppins", serif;
+//     line-height: 1.5;
+// }
+
+// .eng-font {
+//     font-family: "Newsreader", sans-serif;
+//   }
+// .list-unstyle{
+//   padding-left: 0; // 取消預設的 padding
+
+//   list-style: none; // 移除列表符號
+// }
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+// $link-decoration: underline !default;
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.fs-14 {
+  font-size: 14px;
+}
+// 刪除線
+.line-through {
+  text-decoration: line-through;
+}
+.text-gray-808080 {
+  color: #808080;
+}
+.text-gray-180000 {
+  color: #180000;
+}
+
+
+
+// 通常這裡是設定 margin: 0;
+// 在 scss - utils - _variables.scss - headings-margin-bottom
+// 設計稿有設定字距 10%，所以設定 0.1em
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   letter-spacing: 0.1em;
+// }
+
+// 通常這裡是設定 margin: 0;
+// 在 scss - utils - _variables.scss - paragraph-margin-bottom
+// 設計稿有設定字距 5%，所以設定 0.05em
+// p {
+//   letter-spacing: 0.05em;
+// }
+
+// .bi {
+//   font-size: 1.25rem;
+//   @include media-breakpoint-up(lg) {
+//     font-size: 1.5rem;
+//   }
+// }

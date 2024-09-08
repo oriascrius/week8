@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>week8 - 六角｜Learning - 線上課程網站(已登入)</title>
+  <!-- 控制icon，引入 Google 字體 -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!-- swipper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <%- include('./layout/header_logged'); -%>
+    <!-- 1.banner -->
+    <section class="banner-wrapper  overflow-hidden">
+      <div class="swiper-banner">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <!-- banner css 控制背景圖 -->
+            <div class="banner-1 mx-auto position-relative">
+              <!-- 花朵圖片 -->
+              <img src="../assets/images/deco/flower-4.png" alt="flower" class="position-absolute banner-flower">
+              <!-- 熱銷課程 -->
+              <div class="d-flex align-items-center position-absolute banner-title bg-gray-0">
+                <a href="#" class="py-1 px-2 bg-primary-10 text-primary-100 banner-btn-course me-1">熱銷課程 🔥
+                </a>
+                <h3 class="text-gray-100 fs-lg-6 banner-title-text-lg">給成人的鋼琴入門課，一小時教你彈奏上手！</h3>
+                <h3 class="text-gray-100 fs-lg-6 banner-title-text-sm">給成人的鋼琴入門課，一小時教<br>你彈奏上手！</h3>
+              </div>
+              <!-- banner 底部 -->
+              <a href="#" class="d-flex align-items-center bg-primary-100 banner-bottom position-absolute">
+                <h2 class="text-gray-0 pe-3">探索感興趣的課程，今天立即上課</h2>
+                <img src="../assets/images/icons/arrow.png" alt="arrow" class="banner-bottom-arrow overflow-hidden">
+              </a>
+            </div>
+            <div class="swiper-button-next d-none d-lg-block"></div>
+            <div class="swiper-button-prev d-none d-lg-block"></div>
+          </div>
+          <div class="swiper-slide">
+            <!-- banner css 控制背景圖 -->
+            <div class="banner-2 mx-auto position-relative">
+              <!-- 花朵圖片 -->
+              <img src="../assets/images/deco/flower-4.png" alt="flower" class="position-absolute banner-flower">
+              <!-- 熱銷課程 -->
+              <div class="d-flex align-items-center position-absolute banner-title bg-gray-0">
+                <a href="#" class="py-1 px-2 bg-primary-10 text-primary-100 banner-btn-course me-1">熱銷課程 🔥
+                </a>
+                <h3 class="text-gray-100 fs-lg-6 banner-title-text-lg">給成人的鋼琴入門課，一小時教你彈奏上手！</h3>
+                <h3 class="text-gray-100 fs-lg-6 banner-title-text-sm">給成人的鋼琴入門課，一小時教<br>你彈奏上手！</h3>
+              </div>
+              <!-- banner 底部 -->
+              <a href="#" class="d-flex align-items-center bg-primary-100 banner-bottom position-absolute">
+                <h2 class="text-gray-0 pe-3">探索感興趣的課程，今天立即上課</h2>
+                <img src="../assets/images/icons/arrow.png" alt="arrow" class="banner-bottom-arrow overflow-hidden">
+              </a>
+            </div>
+            <div class="swiper-button-next d-none d-lg-block"></div>
+            <div class="swiper-button-prev d-none d-lg-block"></div>
+          </div>
+          <div class="swiper-slide">
+            <!-- banner css 控制背景圖 -->
+            <div class="banner-3 mx-auto position-relative">
+              <!-- 花朵圖片 -->
+              <img src="../assets/images/deco/flower-4.png" alt="flower" class="position-absolute banner-flower">
+              <!-- 熱銷課程 -->
+              <div class="d-flex align-items-center position-absolute banner-title bg-gray-0">
+                <a href="#" class="py-1 px-2 bg-primary-10 text-primary-100 banner-btn-course me-1">熱銷課程 🔥
+                </a>
+                <h3 class="text-gray-100 fs-lg-6 banner-title-text-lg">給成人的鋼琴入門課，一小時教你彈奏上手！</h3>
+                <h3 class="text-gray-100 fs-lg-6 banner-title-text-sm">給成人的鋼琴入門課，一小時教<br>你彈奏上手！</h3>
+              </div>
+              <!-- banner 底部 -->
+              <a href="#" class="d-flex align-items-center bg-primary-100 banner-bottom position-absolute">
+                <h2 class="text-gray-0 pe-3">探索感興趣的課程，今天立即上課</h2>
+                <img src="../assets/images/icons/arrow.png" alt="arrow" class="banner-bottom-arrow overflow-hidden">
+              </a>
+            </div>
+            <div class="swiper-button-next d-none d-lg-block"></div>
+            <div class="swiper-button-prev d-none d-lg-block"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 2.火熱募資課程 -->
+    <section class="popular-courses  overflow-hidden">
+      <div class="container">
+        <div class="row">
+          <!-- lg link -->
+          <div class="col-md-4 col-12 popular-courses-link-lg">
+            <div class="pb-lg-7 pb-5 popular-courses-title-lg">
+              <h2 class="text-gray-100 pb-1 popular-courses-title">火熱募資課程</h2>
+              <span class="text-gray-80 popular-courses-title-spen">現在購買最優惠</span>
+            </div>
+            <ul class="d-flex list-unstyled gap-2 pb-2">
+              <li><a href="#" class="py-2 px-3 popular-courses-link border border-1 border-gray-40">全部</a></li>
+              <li><a href="#" class="py-2 px-3 popular-courses-link border border-1 border-gray-40">🍽️ 烹飪料理</a></li>
+              <li><a href="#" class="py-2 px-3 popular-courses-link border border-1 border-gray-40">📊 數據分析</a></li>
+            </ul>
+            <ul class="d-flex list-unstyled gap-2 pb-2">
+              <li><a href="#" class="py-2 px-3 popular-courses-link border border-1 border-gray-40">🎼 音樂製作</a></li>
+              <li><a href="#" class="py-2 px-3 popular-courses-link border border-1 border-gray-40">📝 創意寫作</a></li>
+              <li><a href="#" class="py-2 px-3 popular-courses-link border border-1 border-gray-40">💬 語言學習</a></li>
+            </ul>
+            <ul class="d-flex list-unstyled pb-7">
+              <li><a href="#" class="py-2 px-3 popular-courses-link border border-1 border-gray-40">🖌️ 藝術創作</a></li>
+            </ul>
+            <a href="#" class="popular-courses-moreBtn moreBtn-lg bg-primary-100 text-gray-0">更多募資課程</a>
+          </div>
+
+          <!-- sm link -->
+          <div class="col-md-4 col-12 popular-courses-link-sm">
+            <div class="pb-lg-7 pb-5 popular-courses-title-sm">
+              <h2 class="fw-bold text-gray-100 pb-1 popular-courses-title position-relative">火熱募資課程<img
+                  src="../assets/images/deco/flower-2.png" alt="flower" style="width:200px; height: 200px;"
+                  class="position-absolute popular-courses-flower"></h2>
+              <span class="fw-medium text-gray-80 fs-6">現在購買最優惠</span>
+            </div>
+            <div class="swiper-popular-courses-link">
+              <ul class="d-flex list-unstyled pb-5 pb-lg-2 swiper-wrapper">
+                <li class="swiper-slide w-auto"><a href="#"
+                    class="py-2 px-3 popular-courses-link border border-1 border-gray-40 ">全部</a></li>
+                <li class="swiper-slide w-auto"><a href="#"
+                    class="py-2 px-3 popular-courses-link border border-1 border-gray-40">🍽️烹飪料理</a></li>
+                <li class="swiper-slide w-auto"><a href="#"
+                    class="py-2 px-3 popular-courses-link border border-1 border-gray-40">📊 數據分析</a></li>
+                <li class="swiper-slide w-auto"><a href="#"
+                    class="py-2 px-3 popular-courses-link border border-1 border-gray-40">🎼 音樂製作</a></li>
+                <li class="swiper-slide w-auto"><a href="#"
+                    class="py-2 px-3 popular-courses-link border border-1 border-gray-40">📝 創意寫作</a></li>
+                <li class="swiper-slide w-auto"><a href="#"
+                    class="py-2 px-3 popular-courses-link border border-1 border-gray-40">💬 語言學習</a></li>
+                <li class="swiper-slide w-auto"><a href="#"
+                    class="py-2 px-3 popular-courses-link border border-1 border-gray-40">🖌️ 藝術創作</a></li>
+              </ul>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="col-md-8 col-12 position-relative">
+            <div class="swiper-popular-courses">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card overflow-hidden">
+                    <a href="#">
+                      <img src="../assets/images/course-4.png" alt="創意寫作工坊" class="w-100">
+                    </a>
+                    <div class="fs-14 position-absolute card-text-overlay py-1 px-2 text-primary-100 bg-primary-10"
+                      style="top: 16px; left: 16px;">
+                      優惠倒數 10天
+                    </div>
+                    <div class="card-body py-5 px-3">
+                      <h3 class="fs-6 pb-1 text-gray-100">創意寫作工坊：從靈感到出版的全過程</h3>
+                      <div class="d-flex align-items-center pb-5"><img src="../assets/images/avatar-2.png"
+                          class="pe-1 text-gray-80" alt="Kelly Hsu">
+                        <p>Kelly Hsu</p>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <p class="text-primary-100 pb-1">募資進度 81 %</p>
+                        <p class="text-gray-80 fs-14">已有521位同學加入</p>
+                      </div>
+                      <div class="progress" style="height: 8px;">
+                        <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <div class="d-flex align-items-center pt-1">
+                        <p class="fs-6 text-gray-100 pe-1">NT$ 2,480</p>
+                        <p class="fs-14 fw-normal line-through">NT$3,280</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card overflow-hidden">
+                    <a href="#">
+                      <img src="../assets/images/course-1.png" alt="健康廚房" class="w-100">
+                    </a>
+                    <div class="fs-14 position-absolute card-text-overlay py-1 px-2 text-primary-100 bg-primary-10"
+                      style="top: 16px; left: 16px;">
+                      優惠倒數 17 天
+                    </div>
+                    <div class="card-body py-5 px-3">
+                      <h3 class="fs-6 pb-1 text-gray-100">健康廚房：營養均衡的素食料理指南</h3>
+                      <div class="d-flex align-items-center pb-5"><img src="../assets/images/avatar-5.png"
+                          class="pe-1 text-gray-80" alt="希姐帶你吃">
+                        <p>希姐帶你吃</p>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <p class="text-primary-100 pb-1">募資進度 281 %</p>
+                        <p class="text-gray-80 fs-14">已有 1,397 位同學加入</p>
+                      </div>
+                      <div class="progress" style="height: 8px;">
+                        <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <div class="d-flex align-items-center pt-1">
+                        <p class="fs-6 text-gray-100 pe-1">NT$ 1,680</p>
+                        <p class="fs-14 fw-normal line-through">NT2,980</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card overflow-hidden">
+                    <a href="#">
+                      <img src="../assets/images/course-2.png" alt="音樂製作入門" class="w-100">
+                    </a>
+                    <div class="fs-14 position-absolute card-text-overlay py-1 px-2 text-primary-100 bg-primary-10"
+                      style="top: 16px; left: 16px;">
+                      優惠倒數 9 天
+                    </div>
+                    <div class="card-body py-5 px-3">
+                      <h3 class="fs-6 pb-1 text-gray-100">音樂製作入門：從零開始創作你的音樂</h3>
+                      <div class="d-flex align-items-center pb-5"><img src="../assets/images/avatar-6.png"
+                          class="pe-1 text-gray-80" alt="K.Dee">
+                        <p>K.Dee</p>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <p class="text-primary-100 pb-1">募資進度 76 %</p>
+                        <p class="text-gray-80 fs-14">已有420位同學加入</p>
+                      </div>
+                      <div class="progress" style="height: 8px;">
+                        <div class="progress-bar" role="progressbar" style="width: 76%" aria-valuenow="76"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <div class="d-flex align-items-center pt-1">
+                        <p class="fs-6 text-gray-100 pe-1">NT$ 2,680</p>
+                        <p class="fs-14 fw-normal line-through">NT$3,200</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card overflow-hidden">
+                    <a href="#">
+                      <img src="../assets/images/course-3.png" alt="掌握商業攝影" class="w-100">
+                    </a>
+                    <div class="fs-14 position-absolute card-text-overlay py-1 px-2 text-primary-100 bg-primary-10"
+                      style="top: 16px; left: 16px;">
+                      優惠倒數 1 天
+                    </div>
+                    <div class="card-body py-5 px-3">
+                      <h3 class="fs-6 pb-1 text-gray-100">掌握商業攝影：打造你的專業攝影事業</h3>
+                      <div class="d-flex align-items-center pb-5"><img src="../assets/images/avatar-7.png"
+                          class="pe-1 text-gray-80" alt="Mikeeee">
+                        <p>Mikeeee</p>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <p class="text-primary-100 pb-1">募資進度 98 %</p>
+                        <p class="text-gray-80 fs-14">已有 290 位同學加入</p>
+                      </div>
+                      <div class="progress" style="height: 8px;">
+                        <div class="progress-bar" role="progressbar" style="width: 98%" aria-valuenow="98"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <div class="d-flex align-items-center pt-1">
+                        <p class="fs-6 text-gray-100 pe-1">NT$ 1,980</p>
+                        <p class="fs-14 fw-normal line-through">NT$ 3,200</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="popular-courses-moreBtn moreBtn-sm bg-primary-100 text-gray-0 text-center w-100">更多募資課程</a>
+      </div>
+    </section>
+    <!-- 3.看看大家都買了什麼 -->
+    <section class="courses-list position-relative overflow-hidden">
+      <div class="container">
+        <div class="d-flex flex-column align-items-center pb-7">
+          <h2 class="fs-lg-8 fw-bold text-center pb-1 text-gray-1 position-relative  d-inline-block">看看大家都買了什麼 <img
+              src="../assets/images/deco/flower-1.png" alt="flower" class="courses-list-flower position-absolute"
+              style="width: 60px; height: 60px;"></h2>
+          <p class="fs-lg-6 fw-medium text-center text-gray-80">熱銷課程一次看！</p>
+        </div>
+        <div class="swiper-courses-list position-relative">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <a href="#">
+                  <img src="../assets/images/course-4.png" alt="創意寫作工坊" class="w-100" style="height: 200px;">
+                </a>
+                <div class="fs-14 position-absolute card-text-overlay py-1 ps-2 pe-5 text-danger-100 bg-danger-10"
+                  style="top: 16px; left: 16px;">
+                  限時 8 折
+                </div>
+                <div class="card-body p-3">
+                  <h3 class="fs-6 pb-3 text-gray-100">創意寫作工坊：從靈感到出版的全過程</h3>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                      <img src="../assets/images/avatar-2.png" class="pe-1 w-auto" alt="Kelly Hsu"
+                        style="width: 32px; height: 32px;">
+                      <p class="text-gray-80 fw-normal">Kelly Hsu</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                      <p class="fs-6 text-primary-100 fw-bold">NT$ 2,480</p>
+                      <p class="fs-14 fw-normal line-through text-gray-808080">NT$3,280</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer bg-white border-1 border-top border-gray-40 p-3">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                      <div class="bg-gray-40 fs-14 fw-normal text-gray-80 d-inline-block courses-list-badge">中文創作</div>
+                      <p class="fs-14 fw-normal text-gray-80">已有 420 位同學加入</p>
+                    </div>
+                    <div class="d-flex align-items-center courses-list-score">
+                      <img src="../assets/images/icons/ic_star.png" alt="star">
+                      <p class="text-gray-180000 fw-medium">4.0</p>
+                      <p class="text-gray-808080 fw-medium">(333)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <a href="#">
+                  <img src="../assets/images/course-5.png" alt="小白也會！從零開始學習 Python 程式設計" class="w-100"
+                    style="height: 200px;">
+                </a>
+                <div class="fs-14 position-absolute card-text-overlay py-1 ps-2 pe-5 text-danger-100 bg-danger-10"
+                  style="top: 16px; left: 16px;">
+                  限時 8 折
+                </div>
+                <div class="card-body p-3">
+                  <h3 class="fs-6 pb-3 text-gray-100">小白也會！從零開始學習 Python 程式設計</h3>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                      <img src="../assets/images/avatar-2.png" class="pe-1 w-auto" alt="Kelly Hsu"
+                        style="width: 32px; height: 32px;">
+                      <p class="text-gray-80 fw-normal">Kelly Hsu</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                      <p class="fs-6 text-primary-100 fw-bold">NT$ 2,480</p>
+                      <p class="fs-14 fw-normal line-through text-gray-808080">NT$3,280</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer bg-white border-1 border-top border-gray-40 p-3">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                      <div class="bg-gray-40 fs-14 fw-normal text-gray-80 d-inline-block courses-list-badge">中文創作</div>
+                      <p class="fs-14 fw-normal text-gray-80">已有 420 位同學加入</p>
+                    </div>
+                    <div class="d-flex align-items-center courses-list-score">
+                      <img src="../assets/images/icons/ic_star.png" alt="star">
+                      <p class="text-gray-180000 fw-medium">4.0</p>
+                      <p class="text-gray-808080 fw-medium">(333)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <a href="#">
+                  <img src="../assets/images/course-6.png" alt="全面掌握 JavaScript 開發技術" class="w-100"
+                    style="height: 200px;">
+                </a>
+                <div class="fs-14 position-absolute card-text-overlay py-1 ps-2 pe-5 text-danger-100 bg-danger-10"
+                  style="top: 16px; left: 16px;">
+                  限時 8 折
+                </div>
+                <div class="card-body p-3">
+                  <h3 class="fs-6 pb-3 text-gray-100">全面掌握 JavaScript 開發技術&nbsp;</h3>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                      <img src="../assets/images/avatar-2.png" class="pe-1 w-auto" alt="Kelly Hsu"
+                        style="width: 32px; height: 32px;">
+                      <p class="text-gray-80 fw-normal">Kelly Hsu</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                      <p class="fs-6 text-primary-100 fw-bold">NT$ 2,480</p>
+                      <p class="fs-14 fw-normal line-through text-gray-808080">NT$3,280</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer bg-white border-1 border-top border-gray-40 p-3">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                      <div class="bg-gray-40 fs-14 fw-normal text-gray-80 d-inline-block courses-list-badge">中文創作</div>
+                      <p class="fs-14 fw-normal text-gray-80">已有 420 位同學加入</p>
+                    </div>
+                    <div class="d-flex align-items-center courses-list-score">
+                      <img src="../assets/images/icons/ic_star.png" alt="star">
+                      <p class="text-gray-180000 fw-medium">4.0</p>
+                      <p class="text-gray-808080 fw-medium">(333)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <a href="#">
+                  <img src="../assets/images/course-7.png" alt="HTML & CSS 網頁設計基礎教程" class="w-100"
+                    style="height: 200px;">
+                </a>
+                <div class="card-body p-3">
+                  <h3 class="fs-6 pb-3 text-gray-100">HTML & CSS 網頁設計基礎教程</h3>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                      <img src="../assets/images/avatar-2.png" class="pe-1 w-auto" alt="Kelly Hsu"
+                        style="width: 32px; height: 32px;">
+                      <p class="text-gray-80 fw-normal">Kelly Hsu</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                      <p class="fs-6 text-primary-100 fw-bold">NT$ 2,480</p>
+                      <p class="fs-14 fw-normal line-through text-gray-808080">NT$3,280</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer bg-white border-1 border-top border-gray-40 p-3">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                      <div class="bg-gray-40 fs-14 fw-normal text-gray-80 d-inline-block courses-list-badge">中文創作</div>
+                      <p class="fs-14 fw-normal text-gray-80">已有 420 位同學加入</p>
+                    </div>
+                    <div class="d-flex align-items-center courses-list-score">
+                      <img src="../assets/images/icons/ic_star.png" alt="star">
+                      <p class="text-gray-180000 fw-medium">4.0</p>
+                      <p class="text-gray-808080 fw-medium">(333)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <a href="#">
+                  <img src="../assets/images/course-8.png" alt="HTML & CSS 網頁設計基礎教程" class="w-100"
+                    style="height: 200px;">
+                </a>
+                <div class="card-body p-3">
+                  <h3 class="fs-6 pb-3 text-gray-100">更進一步！深入學習 Node.js 與後端開發</h3>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                      <img src="../assets/images/avatar-2.png" class="pe-1 w-auto" alt="Kelly Hsu"
+                        style="width: 32px; height: 32px;">
+                      <p class="text-gray-80 fw-normal">Kelly Hsu</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                      <p class="fs-6 text-primary-100 fw-bold">NT$ 2,480</p>
+                      <p class="fs-14 fw-normal line-through text-gray-808080">NT$3,280</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer bg-white border-1 border-top border-gray-40 p-3">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                      <div class="bg-gray-40 fs-14 fw-normal text-gray-80 d-inline-block courses-list-badge">中文創作</div>
+                      <p class="fs-14 fw-normal text-gray-80">已有 420 位同學加入</p>
+                    </div>
+                    <div class="d-flex align-items-center courses-list-score">
+                      <img src="../assets/images/icons/ic_star.png" alt="star">
+                      <p class="text-gray-180000 fw-medium">4.0</p>
+                      <p class="text-gray-808080 fw-medium">(333)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+    <!-- 4.想學什麼嗎？ -->
+    <section class="study-courses-wrapper mx-auto overflow-hidden">
+      <div class="study-courses bg-primary-100">
+        <div class="container">
+          <div class="row d-flex study-courses-direction">
+            <!-- 左邊六格線 lg 時顯示 -->
+            <div class="col-md-6 study-courses-lg">
+              <div class="row">
+                <!-- 左邊六格線的左邊三格線 -->
+                <div class="col-md-6">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="d-flex p-4 bg-white study-courses-list mb-4">
+                        <div class="d-flex align-items-center study-courses-iconBg study-courses-iconBg-1 me-4 p-3">
+                          <img src="../assets/images/icons/megaphoneSimple.png" alt="megaphoneSimple">
+                        </div>
+                        <div class="d-flex flex-column justify-content-center">
+                          <h3 class="study-courses-title pb-1">網路行銷</h3>
+                          <p class="study-courses-description">342 門課程</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="d-flex p-4 bg-white study-courses-list mb-4">
+                        <div class="d-flex align-items-center study-courses-iconBg study-courses-iconBg-2 me-4 p-3">
+                          <img src="../assets/images/icons/chartBarHorizontal.png" alt="chartBarHorizontal">
+                        </div>
+                        <div class="d-flex flex-column justify-content-center">
+                          <h3 class="study-courses-title pb-1">自我成長</h3>
+                          <p class="study-courses-description">490 門課程</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="d-flex p-4 bg-white study-courses-list mb-4">
+                        <div class="d-flex align-items-center study-courses-iconBg study-courses-iconBg-3 me-4 p-3">
+                          <img src="../assets/images/icons/bugDroid.png" alt="bugDroid">
+                        </div>
+                        <div class="d-flex flex-column justify-content-center">
+                          <h3 class="study-courses-title pb-1">數據分析</h3>
+                          <p class="study-courses-description">395 門課程</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="d-flex p-4 bg-white study-courses-list mb-4">
+                        <div class="d-flex align-items-center study-courses-iconBg study-courses-iconBg-4 me-4 p-3">
+                          <img src="../assets/images/icons/headphones.png" alt="headphones">
+                        </div>
+                        <div class="d-flex flex-column justify-content-center">
+                          <h3 class="study-courses-title pb-1">音樂創作</h3>
+                          <p class="study-courses-description">283 門課程</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- 左邊六格線的右邊三格線 -->
+                <div class="col-md-6">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="d-flex p-4 bg-white study-courses-list mb-4">
+                        <div class="d-flex align-items-center study-courses-iconBg study-courses-iconBg-5 me-4 p-3">
+                          <img src="../assets/images/icons/camera.png" alt="camera">
+                        </div>
+                        <div class="d-flex flex-column justify-content-center">
+                          <h3 class="study-courses-title pb-1">拍攝剪輯</h3>
+                          <p class="study-courses-description">563 門課程</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="d-flex p-4 bg-white study-courses-list mb-4">
+                        <div class="d-flex align-items-center study-courses-iconBg study-courses-iconBg-6 me-4 p-3">
+                          <img src="../assets/images/icons/penNib.png" alt="penNib">
+                        </div>
+                        <div class="d-flex flex-column justify-content-center">
+                          <h3 class="study-courses-title pb-1">藝術設計</h3>
+                          <p class="study-courses-description">230 門課程</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="d-flex p-4 bg-white study-courses-list mb-4">
+                        <div class="d-flex align-items-center study-courses-iconBg study-courses-iconBg-7 me-4 p-3">
+                          <img src="../assets/images/icons/creditCard.png" alt="creditCard">
+                        </div>
+                        <div class="d-flex flex-column justify-content-center">
+                          <h3 class="study-courses-title pb-1">投資理財</h3>
+                          <p class="study-courses-description">486 門課程</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="d-flex p-4 bg-white study-courses-list mb-4">
+                        <div class="d-flex align-items-center study-courses-iconBg study-courses-iconBg-8 me-4 p-4">
+                          <img src="../assets/images/icons/arrow.png" alt="arrow">
+                        </div>
+                        <div class="d-flex flex-column justify-content-center">
+                          <h3 class="study-courses-title">探索更多</h3>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- 左邊六格線 sm 時顯示 -->
+            <div class="study-courses-sm study-courses-swiper">
+              <div class="swiper-wrapper">
+                <!-- 第一個 slide -->
+                <div class="swiper-slide">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="d-flex p-4 bg-white study-courses-list mb-4">
+                        <div class="d-flex align-items-center study-courses-iconBg study-courses-iconBg-1 me-4 p-3">
+                          <img src="../assets/images/icons/megaphoneSimple.png" alt="megaphoneSimple">
+                        </div>
+                        <div class="d-flex flex-column justify-content-center">
+                          <h3 class="study-courses-title pb-1">網路行銷</h3>
+                          <p class="study-courses-description">342 門課程</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="d-flex p-4 bg-white study-courses-list mb-4">
+                        <div class="d-flex align-items-center study-courses-iconBg study-courses-iconBg-3 me-4 p-3">
+                          <img src="../assets/images/icons/bugDroid.png" alt="bugDroid">
+                        </div>
+                        <div class="d-flex flex-column justify-content-center">
+                          <h3 class="study-courses-title pb-1">數據分析</h3>
+                          <p class="study-courses-description">395 門課程</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- 第二個 slide -->
+                <div class="swiper-slide">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="d-flex p-4 bg-white study-courses-list mb-4">
+                        <div class="d-flex align-items-center study-courses-iconBg study-courses-iconBg-5 me-4 p-3">
+                          <img src="../assets/images/icons/camera.png" alt="camera">
+                        </div>
+                        <div class="d-flex flex-column justify-content-center">
+                          <h3 class="study-courses-title pb-1">拍攝剪輯</h3>
+                          <p class="study-courses-description">563 門課程</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="d-flex p-4 bg-white study-courses-list mb-4">
+                        <div class="d-flex align-items-center study-courses-iconBg study-courses-iconBg-7 me-4 p-3">
+                          <img src="../assets/images/icons/creditCard.png" alt="creditCard">
+                        </div>
+                        <div class="d-flex flex-column justify-content-center">
+                          <h3 class="study-courses-title pb-1">投資理財</h3>
+                          <p class="study-courses-description">486 門課程</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- 第三個 slide -->
+                <div class="swiper-slide">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="d-flex p-4 bg-white study-courses-list mb-4">
+                        <div class="d-flex align-items-center study-courses-iconBg study-courses-iconBg-2 me-4 p-3">
+                          <img src="../assets/images/icons/chartBarHorizontal.png" alt="chartBarHorizontal">
+                        </div>
+                        <div class="d-flex flex-column justify-content-center">
+                          <h3 class="study-courses-title pb-1">自我成長</h3>
+                          <p class="study-courses-description">490 門課程</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="d-flex p-4 bg-white study-courses-list mb-4">
+                        <div class="d-flex align-items-center study-courses-iconBg study-courses-iconBg-4 me-4 p-3">
+                          <img src="../assets/images/icons/headphones.png" alt="headphones">
+                        </div>
+                        <div class="d-flex flex-column justify-content-center">
+                          <h3 class="study-courses-title pb-1">音樂創作</h3>
+                          <p class="study-courses-description">283 門課程</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- 第四個 slide -->
+                <div class="swiper-slide">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="d-flex p-4 bg-white study-courses-list mb-4">
+                        <div class="d-flex align-items-center study-courses-iconBg study-courses-iconBg-6 me-4 p-3">
+                          <img src="../assets/images/icons/penNib.png" alt="penNib">
+                        </div>
+                        <div class="d-flex flex-column justify-content-center">
+                          <h3 class="study-courses-title pb-1">藝術設計</h3>
+                          <p class="study-courses-description">230 門課程</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="d-flex p-4 bg-white study-courses-list mb-4">
+                        <div class="d-flex align-items-center study-courses-iconBg study-courses-iconBg-8 me-4 p-4">
+                          <img src="../assets/images/icons/arrow.png" alt="arrow">
+                        </div>
+                        <div class="d-flex flex-column justify-content-center">
+                          <h3 class="study-courses-title">探索更多</h3>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- 右邊六格線 -->
+            <div class="col-md-6 d-lg-flex d-block justify-content-end">
+              <div class="study-courses-polygon pe-lg-1 pb-1">
+                <img src="../assets/images/deco/polygon-1.png" alt="polygon">
+              </div>
+              <div class="study-courses-other-content">
+                <h2 class="pb-1">想學什麼嗎？</h2>
+                <h2 class="pb-1">一探究竟。</h2>
+                <img src="../assets/images/deco/line-2.png" alt="line" class="pb-7 pb-lg-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 5.頂尖講師帶你飛 -->
+    <section class="teacher-describe  overflow-hidden">
+      <div class="teacher-describe-title pb-lg-7 pb-5">
+        <h2 class="position-relative pb-1 teacher-describe-title-lg">頂尖講師帶你飛 <img
+            src="../assets/images/deco/flower-1.png" alt="flower" class="position-absolute"
+            style="width: 60px; height: 60px;"></h2>
+        <h2 class="position-relative  pb-1 teacher-describe-title-sm">頂尖講師<br>帶你飛 <img
+            src="../assets/images/deco/flower-1.png" alt="flower" class="position-absolute"
+            style="width: 60px; height: 60px;"></h2>
+        <h4>超真實學員評價，這些講師你絕對不能錯過！</h3>
+      </div>
+      <div class="container">
+        <div class="teacher-describe-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide ps-10">
+              <ul class="list-unstyled">
+                <li class="position-relative">
+                  <img src="../assets/images/teacher-3.png" alt="Mr. Robert"
+                    class="teacher-describe-img position-relative">
+                  <div class="teacher-describe-card p-lg-5 bg-white">
+                    <h3 clsss="">Mr. Robert</h3>
+                    <div class="d-flex align-items-center pb-1">
+                      <div class="teacher-describe-badge text-gray-80 bg-gray-40 py-1 px-2 me-1">音樂創作</div>
+                      <div class="d-flex align-items-center teacher-describe-score">
+                        <img src="../assets/images/icons/ic_star.png" alt="star">
+                        <p class="text-gray-180000 fw-medium">4.0</p>
+                        <p class="text-gray-808080 fw-medium">(333)</p>
+                      </div>
+                    </div>
+                    <p class="pb-5 fw-normal text-gray-80">Robert
+                      的線上課程深受學生喜愛。他的教學<br>方法生動有趣，能夠深入淺出地講解複雜的音<br>樂理論，並結合實際演奏技巧，使學生能夠快<br>速進步。</p>
+                    <div class="teacher-describe-btn btn btn-primary-100 text-gray-0 w-100">探索 Mr. Robert 的教學課程</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide ps-10">
+              <ul class="list-unstyled">
+                <li class="position-relative">
+                  <img src="../assets/images/teacher-1.png" alt="Kelly Beck"
+                    class="teacher-describe-img position-relative">
+                  <div class="teacher-describe-card p-lg-5 bg-white">
+                    <h3 clsss="">Kelly Beck</h3>
+                    <div class="d-flex align-items-center pb-1">
+                      <div class="teacher-describe-badge text-gray-80 bg-gray-40 py-1 px-2 me-1">英文寫作</div>
+                      <div class="d-flex align-items-center teacher-describe-score">
+                        <img src="../assets/images/icons/ic_star.png" alt="star">
+                        <p class="text-gray-180000 fw-medium">4.8</p>
+                        <p class="text-gray-808080 fw-medium">(281)</p>
+                      </div>
+                    </div>
+                    <p class="pb-5 fw-normal text-gray-80">Kelly 的教學方式靈活且富有創意，能夠有效<br>提升學生的寫作技巧和自信心。Kelly
+                      注重實<br>用性，針對學生的需求量身打造教學內容，並<br>提供具體的反饋和建議。</p>
+                    <div class="teacher-describe-btn btn btn-primary-100 text-gray-0 w-100">探索 Kelly Beck 的教學課程</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide ps-10">
+              <ul class="list-unstyled">
+                <li class="position-relative">
+                  <img src="../assets/images/teacher-2.png" alt="K. Lee" class="teacher-describe-img position-relative">
+                  <div class="teacher-describe-card p-lg-5 bg-white">
+                    <h3 clsss="">K. Lee</h3>
+                    <div class="d-flex align-items-center pb-1">
+                      <div class="teacher-describe-badge text-gray-80 bg-gray-40 py-1 px-2 me-1">音樂創作</div>
+                      <div class="d-flex align-items-center teacher-describe-score">
+                        <img src="../assets/images/icons/ic_star.png" alt="star">
+                        <p class="text-gray-180000 fw-medium">4.8</p>
+                        <p class="text-gray-808080 fw-medium">(1,245)</p>
+                      </div>
+                    </div>
+                    <p class="pb-5 fw-normal text-gray-80">K. Lee 的教學風格親切且耐心，能夠循序漸進<br>地引導學生進入樂團的世界。學生們紛紛表<br>示，K. Lee
+                      的課程讓他們對音樂產生了濃厚的<br>興趣！</p>
+                    <div class="teacher-describe-btn btn btn-primary-100 text-gray-0 w-100">探索 K. Lee 的教學課程</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <%- include('./layout/footer'); -%>
+      <!-- jquery -->
+      <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script type="module" src="../main.js"></script>
+
+</body>
+
+</html>
