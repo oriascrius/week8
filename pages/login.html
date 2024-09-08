@@ -21,8 +21,9 @@
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <div class="login-wrapper col-12 col-lg-6">
-                            <h2 class="pb-5 pb-lg-7">歡迎回來！</h2>
-                            <a href="#" class="d-flex align-items-center login-btn border border-1 w-100 col-12 col-lg-6 mb-3">
+                            <h2 class="pb-5 pb-lg-7">歡迎加入 Learning</h2>
+                            <a href="#"
+                                class="d-flex align-items-center login-btn border border-1 w-100 col-12 col-lg-6 mb-3">
                                 <div class="d-flex justify-content-start" style="flex: 0 0 auto;">
                                     <img src="../assets/images/icons/ic_google.png" alt="ic_google"
                                         style="width: 24px; height: 24px;">
@@ -40,7 +41,8 @@
                                     使用 Facebook 帳號登入
                                 </div>
                             </a>
-                            <a href="#" class="d-flex align-items-center login-btn border border-1 w-100 col-6 mb-lg-7 mb-5">
+                            <a href="#"
+                                class="d-flex align-items-center login-btn border border-1 w-100 col-6 mb-lg-7 mb-5">
                                 <div class="d-flex justify-content-start" style="flex: 0 0 auto;">
                                     <img src="../assets/images/icons/ic_apple.png" alt="ic_apple"
                                         style="width: 24px; height: 24px;">
@@ -50,23 +52,24 @@
                                 </div>
                             </a>
                             <div class="">
-                                <h4 class="pb-3 learning-login">或使用 Learning 帳號登入</h4>
+                                <h4 class="pb-3 learning-login">或使用 Learning 帳號註冊</h4>
                                 <form class="login-input">
                                     <div class="form-group pb-3">
                                         <label for="email" class="required pb-1">電子信箱</label>
-                                        <input type="email" class="form-control" id="email" placeholder="請輸入電子信箱">
+                                        <input type="email" class="form-control" id="login_email" placeholder="請輸入電子信箱">
                                     </div>
                                     <div class="form-group pb-1 position-relative">
                                         <label for="password" class="required pb-1">密碼</label>
-                                        <input type="password" class="form-control" id="password" placeholder="請輸入密碼">
-                                        <img src="../assets/images/icons/ic_eye-open.png" alt="ic_eye_open" id="eyeOpen"
-                                            class="position-absolute"
+                                        <input type="password" class="form-control" id="login_password"
+                                            placeholder="請輸入密碼">
+                                        <img src="../assets/images/icons/ic_eye-open.png" alt="ic_eye_open"
+                                            id="login_eyeOpen" class="position-absolute"
                                             style="width: 20px; height: 20px; right: 10px; top: 50px; cursor: pointer; display: none"
-                                            onclick="togglePassword()">
+                                            onclick="login_togglePassword()">
                                         <img src="../assets/images/icons/ic_eye_close.png" alt="ic_eye_close"
-                                            id="eyeClose" class="position-absolute"
+                                            id="login_eyeClose" class="position-absolute"
                                             style="width: 20px; height: 20px; right: 10px; top: 50px; cursor: pointer;"
-                                            onclick="togglePassword()">
+                                            onclick="login_togglePassword()">
                                     </div>
                                     <div class="d-flex justify-content-between align-items-center pb-lg-7 pb-5">
                                         <div class="form-check">
@@ -75,10 +78,13 @@
                                         </div>
                                         <a href="#" class="">忘記密碼 ?</a>
                                     </div>
-                                    <button type="submit" class="btn btn-primary w-100 mb-lg-7 mb-5">立即登入</button>
+                                  
+                                    <button type="submit" class="btn btn-primary w-100 mb-lg-7 mb-5"
+                                        id="login_submitBtn" disabled>立即登入</button>
+                                
                                     <div class="d-flex align-items-center pb-3 no-account">
                                         <h4 class="pe-1">沒有 Learning 帳號嗎？</h4>
-                                        <a href="#">立即註冊</a>
+                                        <a href="./register.html">立即註冊</a>
                                     </div>
                                 </form>
                             </div>
@@ -88,25 +94,36 @@
             </div>
         </div>
     </section>
+    <!-- 輸入密碼框的眼睛 -->
     <script>
-        function togglePassword() {
-            const passwordField = document.getElementById('password');
-            const eyeOpen = document.getElementById('eyeOpen');
-            const eyeClose = document.getElementById('eyeClose');
-            if (passwordField.type === 'password') {
-                passwordField.type = 'text';
-                eyeOpen.style.display = 'block';
-                eyeClose.style.display = 'none';
+        function login_togglePassword() {
+            const login_passwordField = document.getElementById('login_password');
+            const login_eyeOpen = document.getElementById('login_eyeOpen');
+            const login_eyeClose = document.getElementById('login_eyeClose');
+            if (login_passwordField.type === 'password') {
+                login_passwordField.type = 'text';
+                login_eyeOpen.style.display = 'block';
+                login_eyeClose.style.display = 'none';
             } else {
-                passwordField.type = 'password';
-                eyeOpen.style.display = 'none';
-                eyeClose.style.display = 'block';
+                login_passwordField.type = 'password';
+                login_eyeOpen.style.display = 'none';
+                login_eyeClose.style.display = 'block';
             }
         }
     </script>
+    <!-- 判斷帳號密碼輸入框都有值時，啟用按钮 -->
+    <script>
+        document.addEventListener("input", function () {
+            const login_email = document.getElementById("login_email").value.trim();
+            const login_password = document.getElementById("login_password").value.trim();
+            const login_submitBtn = document.getElementById("login_submitBtn");
+
+            login_submitBtn.disabled = !(login_email && login_password);  // 当 email 和 password 都有值时，启用按钮
+        });
+    </script>
     <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.7.1.js"
-        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script> -->
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="../main.js"></script>
