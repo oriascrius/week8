@@ -1,0 +1,44 @@
+.login-wrapper {
+  //   padding: 151px 306px;
+  padding: 151px 0;
+  .login-btn {
+    padding: 16px 32px 16px 16px;
+    border-radius: 12px;
+  }
+  .login-btn:nth-child(2) {
+    color: #4b4b4b;
+    font-family: 400;
+    font-size: 16px;
+  }
+  .required::after {
+    content: " *";
+    color: red;
+  }
+  .learning-login {
+    color: #000000;
+    font-family: 600;
+    font-size: 16px;
+  }
+  .login-input {
+    color: #4b4b4b;
+    font-family: 400;
+    font-size: 16px;
+  }
+  .no-account h4 {
+    color: #4b4b4b;
+    font-family: 400;
+    font-size: 16px;
+  }
+  .no-account a {
+    text-decoration: underline;
+    color: #0068ff;
+    font-family: 600;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 991px) {
+  .login-banner {
+    display: none;
+  }
+}
